@@ -20,6 +20,6 @@ use Illuminate\Support\Facades\Route;
 //});
 Route::group(['middleware' =>['api' , 'checkPassword' ,'changeLang'] , 'namespace' => 'admin'] ,function () {
     Route::post('users',[Controller::class,'getAllUsers']);
-
+    Route::post('userByID',[Controller::class,'GetUserByID']);
 });
 
