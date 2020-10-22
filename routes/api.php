@@ -19,10 +19,12 @@ use Illuminate\Support\Facades\Route;
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
 //    return $request->user();
 //});
-Route::group(['middleware' =>['api' , 'checkPassword' ,'changeLang'] ] ,function () {
+
+Route::post('login' , [UserAuthController::class,'login']);
+
+Route::group(['middleware' =>['checkPassword' ,'changeLang','auth:api'] ] ,function () {
     Route::post('users',[Controller::class,'getAllUsers']);
     Route::post('userByID',[Controller::class,'GetUserByID']);
-
 });
-Route::post('login' , [UserAuthController::class,'login']);
+
 
