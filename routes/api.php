@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\User\UserAuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,8 +19,10 @@ use Illuminate\Support\Facades\Route;
 //Route::middleware('auth:api')->get('/user', function (Request $request) {
 //    return $request->user();
 //});
-Route::group(['middleware' =>['api' , 'checkPassword' ,'changeLang'] , 'namespace' => 'admin'] ,function () {
+Route::group(['middleware' =>['api' , 'checkPassword' ,'changeLang'] ] ,function () {
     Route::post('users',[Controller::class,'getAllUsers']);
     Route::post('userByID',[Controller::class,'GetUserByID']);
+
 });
+Route::post('login' , [UserAuthController::class,'login']);
 
