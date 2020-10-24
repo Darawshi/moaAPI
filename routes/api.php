@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\User\UserAuthController;
+use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,13 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::middleware('auth:api')->get('/user', function (Request $request) {
-//    return $request->user();
-//});
-Route::group(['middleware' =>['api' , 'checkPassword' ,'changeLang'] ] ,function () {
-    Route::post('users',[Controller::class,'getAllUsers']);
-    Route::post('userByID',[Controller::class,'GetUserByID']);
-
+Route::group(['middleware' =>[ 'checkPassword' ,'changeLang'] ] ,function () {
+    Route::post('login' , [UserAuthController::class,'login']);
 });
-Route::post('login' , [UserAuthController::class,'login']);
+//'auth:api'
+Route::group(['middleware' =>[ 'checkPassword' ,'changeLang'] ] ,function () {
+    Route::apiResource('user' , UserController::class);
+});
+
 

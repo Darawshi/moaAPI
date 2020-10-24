@@ -22,14 +22,15 @@ class UserFactory extends Factory
      */
     public function definition()
     {
+
         return [
-            'name_ar' => $this->faker->name,
-            'name_en' => $this->faker->name,
+            'first_name_ar' => $this->faker->shuffleString('البتثجحخدزسش'),
+            'last_name_ar' => $this->faker->shuffleString('البتثجحخدزسش'),
+            'first_name_en' => $this->faker->firstName,
+            'last_name_en' => $this->faker->lastName,
             'email' => $this->faker->unique()->safeEmail,
-            'emp_id' => $this->faker->unique(),
-            'email_verified_at' => now(),
+            'emp_id' => $this->faker->unique()->randomNumber(6,true),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-            'remember_token' => Str::random(10),
         ];
     }
 }
