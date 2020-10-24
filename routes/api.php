@@ -1,9 +1,7 @@
 <?php
 
-use App\Http\Controllers\Controller;
 use App\Http\Controllers\User\UserAuthController;
 use App\Http\Controllers\User\UserController;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' =>[ 'checkPassword' ,'changeLang'] ] ,function () {
     Route::post('login' , [UserAuthController::class,'login']);
 });
-//'auth:api'
-Route::group(['middleware' =>[ 'checkPassword' ,'changeLang'] ] ,function () {
+
+Route::group(['middleware' =>[ 'checkPassword' ,'changeLang','auth:api' ] ] ,function () {
     Route::apiResource('user' , UserController::class);
 });
 

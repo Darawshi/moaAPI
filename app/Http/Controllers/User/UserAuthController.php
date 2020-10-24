@@ -11,12 +11,10 @@ use Illuminate\Support\Facades\Validator;
 
 
 
+
 class UserAuthController extends Controller
 {
-
     use GeneralTrait;
-
-
 
     public function login(Request $request)
     {
@@ -40,7 +38,6 @@ class UserAuthController extends Controller
                 /** @var User $user */
                 $user =Auth::user();
                 $token = $user ->createToken('user-Access-Token') ->accessToken;
-                $user =Auth::user();
                 $user -> api_token =$token;
                 return $this->returnData('user' ,$user);
             }
@@ -52,8 +49,5 @@ class UserAuthController extends Controller
 
 
     }
-
-
-
 
 }
