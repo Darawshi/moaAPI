@@ -17,7 +17,7 @@ class UserController extends Controller
 
     public function index(){
         try {
-            $user =User::all();
+            $user =User::paginate();
             if(!$user){
                 return $this->returnError('E013' ,'there is no users');
             }
