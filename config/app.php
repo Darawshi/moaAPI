@@ -164,6 +164,7 @@ return [
 
         /*
          * Package Service Providers...
+         *
          */
 
         /*
@@ -174,6 +175,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        // Laravel IDE helper
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     ],
 

@@ -11,9 +11,14 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
+    'unauthenticated' => 'Unauthenticated',
     'user_not_found' => 'User Not Found.',
     'user_updated' => 'User Updated',
     'user_deleted' => 'User Deleted',
+    'user_created' => 'User Created',
+    'role_not_found' => 'Role Not Found',
+    'role_created' => 'Role Created',
+    'role_updated' => 'Role Updated',
+    'role_deleted' => 'Role Deleted',
 
 ];

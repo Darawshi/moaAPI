@@ -71,7 +71,7 @@ trait GeneralTrait
         else if ($input == "birth_date")
             return 'E005';
 
-        else if ($input == "agreement")
+        else if ($input == "role")
             return 'E006';
 
         else if ($input == "email")

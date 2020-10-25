@@ -77,7 +77,7 @@ class UserController extends Controller
 
             ]);
 
-            return $this->returnSuccessMessage('user created');
+            return $this->returnSuccessMessage(__('messages.user_created'));
 
 
         }

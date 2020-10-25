@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Role\RoleController;
 use App\Http\Controllers\User\UserAuthController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,7 @@ Route::group(['middleware' =>[ 'checkPassword' ,'changeLang','auth:api' ] ] ,fun
     Route::put('profile/update' , [UserController::class,'profileUpdate']);
     Route::put('profile/password' , [UserController::class,'profilePassword']);
 
+    Route::apiResource('role', RoleController::class);
 });
 
 
