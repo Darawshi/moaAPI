@@ -10,20 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="tras">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Role/RoleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_25_204417_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/moaAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/moaAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="ROle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/CheckPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Traits/GeneralTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Traits/GeneralTrait.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
@@ -244,7 +233,7 @@
       <workItem from="1603634845352" duration="92000" />
       <workItem from="1603634945243" duration="3471000" />
       <workItem from="1603642015723" duration="10491000" />
-      <workItem from="1603658425507" duration="6452000" />
+      <workItem from="1603658425507" duration="7356000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -351,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603655431430</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ROle">
+      <created>1603665093063</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603665093063</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,7 +373,8 @@
     <MESSAGE value="users" />
     <MESSAGE value="login" />
     <MESSAGE value="tras" />
-    <option name="LAST_COMMIT_MESSAGE" value="tras" />
+    <MESSAGE value="ROle" />
+    <option name="LAST_COMMIT_MESSAGE" value="ROle" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="399" key="#Composer" timestamp="1603192297817">
@@ -432,10 +429,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603654006260" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603655438168">
+    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1603665463884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603655438168" />
+    <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1603665463884" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603665101196">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603665101196" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -12,7 +12,7 @@ return [
     |
     */
 
-    'unauthenticated' => 'Unauthenticatedxx',
+    'un_authenticated' => 'غير مصرح لك',
     'user_not_found' => 'المستخدم غير موجود',
     'user_updated' => 'تم تحديث المستخدم',
     'user_deleted' => 'تم حذف المستخدم',

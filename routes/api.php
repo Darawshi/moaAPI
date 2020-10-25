@@ -20,7 +20,7 @@ Route::group(['middleware' =>[ 'checkPassword' ,'changeLang'] ] ,function () {
     Route::get('login' , [UserAuthController::class,'login'])->name('login');
 });
 
-Route::group(['middleware' =>[ 'checkPassword' ,'changeLang','auth:api' ] ] ,function () {
+Route::group(['middleware' =>[ 'changeLang','checkPassword' ,'auth:api' ] ] ,function () {
     Route::apiResource('user' , UserController::class);
     Route::get('profile' , [UserController::class,'profile']);
     Route::put('profile/update' , [UserController::class,'profileUpdate']);

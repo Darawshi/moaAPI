@@ -11,7 +11,7 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'unauthenticated' => 'Unauthenticated',
+    'un_authenticated' => 'Unauthenticated',
     'user_not_found' => 'User Not Found.',
     'user_updated' => 'User Updated',
     'user_deleted' => 'User Deleted',
