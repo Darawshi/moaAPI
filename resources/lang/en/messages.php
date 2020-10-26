@@ -20,5 +20,6 @@ return [
     'role_created' => 'Role Created',
     'role_updated' => 'Role Updated',
     'role_deleted' => 'Role Deleted',
+    'role_Used' => "Role Already In Used And Can't Be Deleted",
 
 ];

@@ -15,7 +15,7 @@ class RoleController extends Controller
     public function index()
     {
         try {
-            $role =Role::all();
+            $role =Role::select('id' ,'name_'.$this->getCurrentLang(). ' as name') ->orderBy('id', 'asc')->get();
             if(!$role){
                 return $this->returnError('E006' ,__('messages.role_not_found'));
             }
@@ -29,7 +29,7 @@ class RoleController extends Controller
     public function show($id)
     {
         try {
-            $role =Role::find($id);
+            $role =Role::select('id' ,'name_'.$this->getCurrentLang(). ' as name')->find($id);
             if(!$role){
                 return $this->returnError('E006' ,__('messages.role_not_found'));
             }
@@ -44,7 +44,8 @@ class RoleController extends Controller
     {
         try {
             $rules = [
-                'name' => 'required|string|max:20',
+                'name_ar' => 'required|string|unique:roles|max:20',
+                'name_en' => 'required|string|unique:roles|max:20',
             ];
 
             $validator = Validator::make($request->all(),$rules);
@@ -54,7 +55,7 @@ class RoleController extends Controller
                 return $this->returnValidationError($code, $validator);
             }
 
-            Role::create($request ->only('name'));
+            Role::create($request ->only('name_ar','name_en'));
 
             return $this->returnSuccessMessage(__('messages.role_created'));
 
@@ -69,7 +70,8 @@ class RoleController extends Controller
     {
         try {
             $rules = [
-                'name' => 'required|string|max:20',
+                'name_ar' => 'required|string|unique:roles|max:20',
+                'name_en' => 'required|string|unique:roles|max:20',
             ];
             $role =Role::find($id);
             if(!$role){
@@ -94,7 +96,6 @@ class RoleController extends Controller
         }
     }
 
-
     public function destroy($id)
     {
         try {
@@ -105,7 +106,7 @@ class RoleController extends Controller
             return $this->returnSuccessMessage(__('messages.role_deleted'));
         }
         catch (\Exception $ex){
-            return $this->returnError($ex->getCode(), $ex->getMessage());
+            return $this->returnError('E013' ,__('messages.role_Used'));
         }
     }
 }

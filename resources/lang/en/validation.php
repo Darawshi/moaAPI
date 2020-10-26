@@ -150,6 +150,8 @@ return [
         'email' => 'E-Mail Address',
         'emp_id'=>'Employee ID',
         'last_name_ar'=>'Last Name',
+        'name_ar' => 'Name',
+        'name_en' => 'Name',
     ],
 
 ];
