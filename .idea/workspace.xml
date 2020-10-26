@@ -11,12 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="relation end">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ArticleFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_145856_create_articles_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/ArticleSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +240,7 @@
       <workItem from="1603665976414" duration="243000" />
       <workItem from="1603666430149" duration="18000" />
       <workItem from="1603697510473" duration="14615000" />
-      <workItem from="1603721083453" duration="3280000" />
+      <workItem from="1603721083453" duration="7561000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -387,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603720280787</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="relation end">
+      <created>1603725700212</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603725700212</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,14 +440,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603486062614" />
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603725148555">
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603729389494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603725148555" />
-    <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1603568222505">
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603729389494" />
+    <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1603726408027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603568222505" />
+    <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1603726408027" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603572899605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -475,10 +484,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1603665463884" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603720288643">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603725719769">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603720288643" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603725719769" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -487,20 +496,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603634851961" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php-line-method">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/Role/RoleController.php</url>
-          <line>14</line>
-          <properties>
-            <option name="className" value="\App\Http\Controllers\Role\RoleController" />
-            <option name="methodName" value="index" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

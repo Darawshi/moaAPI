@@ -22,6 +22,8 @@ return [
     'role_updated' => 'تم تحديث الصلاحية',
     'role_deleted' => 'تم حذف الصلاحية',
     'role_Used' => 'الصلاحية مستخدمة , لايمكن حذفها',
+    'articles_not_found' => 'لايوجد مقالات',
+    'article_deleted' => 'تم حذف المقالة',
 
 
 ];

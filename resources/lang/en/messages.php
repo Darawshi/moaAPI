@@ -21,5 +21,7 @@ return [
     'role_updated' => 'Role Updated',
     'role_deleted' => 'Role Deleted',
     'role_Used' => "Role Already In Used And Can't Be Deleted",
+    'articles_not_found' => 'There is no Article Found',
+    'article_deleted' => 'Article Deleted',
 
 ];

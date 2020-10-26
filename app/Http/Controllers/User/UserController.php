@@ -31,7 +31,7 @@ class UserController extends Controller
                 return $q->select('name_'.$this->getCurrentLang().' as name','id');
             }] )->select(
                 'first_name_'.$this->getCurrentLang().' as first_name',
-                'first_name_'.$this->getCurrentLang().' as last_name',
+                'last_name_'.$this->getCurrentLang().' as last_name',
                 'email',
                 'emp_id',
                 'id',
@@ -55,7 +55,7 @@ class UserController extends Controller
                 return $q->select('name_'.$this->getCurrentLang().' as name','id');
             }] )->select(
                 'first_name_'.$this->getCurrentLang().' as first_name',
-                'first_name_'.$this->getCurrentLang().' as last_name',
+                'last_name_'.$this->getCurrentLang().' as last_name',
                 'email',
                 'emp_id',
                 'id',
@@ -140,7 +140,7 @@ class UserController extends Controller
             if(!$user){
                 return $this->returnError('E013' ,__('messages.user_not_found'));
             }
-            return $this->returnSuccessMessage('user_deleted');
+            return $this->returnSuccessMessage(__('messages.user_deleted'));
         }
         catch (\Exception $ex){
             return $this->returnError($ex->getCode(), $ex->getMessage());

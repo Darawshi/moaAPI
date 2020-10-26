@@ -3,83 +3,87 @@
 namespace App\Http\Controllers\Article;
 
 use App\Http\Controllers\Controller;
+use App\Models\Article;
+use App\Traits\GeneralTrait;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ArticleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    use GeneralTrait;
+
     public function index()
     {
-        //
+        try {
+            $article =Article::paginate();
+
+            if(!$article){
+                return $this->returnError('E013' ,__('messages.articles_not_found'));
+            }
+            return $this->returnData('article' ,$article);
+        }
+        catch (\Exception $ex){
+            return $this->returnError($ex->getCode(), $ex->getMessage());
+        }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function show($id)
+    {
+        try {
+            $article =Article::find($id);
+
+            if(!$article){
+                return $this->returnError('E013' ,__('messages.articles_not_found'));
+            }
+            return $this->returnData('article' ,$article);
+        }
+        catch (\Exception $ex){
+            return $this->returnError($ex->getCode(), $ex->getMessage());
+        }
+    }
+
     public function create()
     {
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
-        //
+        try {
+            $article= Article::destroy($id);
+            if(!$article){
+                return $this->returnError('E013' ,__('messages.articles_not_found'));
+            }
+            return $this->returnSuccessMessage(__('messages.article_deleted'));
+        }
+        catch (\Exception $ex){
+            return $this->returnError($ex->getCode(), $ex->getMessage());
+        }
+    }
+
+    public function userArticle(){
+        try {
+
+            $id=Auth::user()->id;
+            $article =Article::where('user_id',$id)->paginate();
+
+            if(!$article){
+                return $this->returnError('E013' ,__('messages.articles_not_found'));
+            }
+            return $this->returnData('article' ,$article);
+        }
+        catch (\Exception $ex){
+            return $this->returnError($ex->getCode(), $ex->getMessage());
+        }
     }
 }

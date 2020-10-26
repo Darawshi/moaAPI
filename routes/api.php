@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Role\RoleController;
 use App\Http\Controllers\User\UserAuthController;
 use App\Http\Controllers\User\UserController;
@@ -27,6 +28,8 @@ Route::group(['middleware' =>[ 'changeLang','checkPassword' ,'auth:api' ] ] ,fun
     Route::put('profile/password' , [UserController::class,'profilePassword']);
 
     Route::apiResource('role', RoleController::class);
+    Route::apiResource('article',ArticleController::class);
+    Route::get('articles/me' , [ArticleController::class,'userArticle']);
 });
 
 
