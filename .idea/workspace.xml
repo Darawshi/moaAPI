@@ -10,15 +10,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="relation end">
+    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="article">
+      <change beforePath="$PROJECT_DIR$/.idea/moaAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/moaAPI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ArticleFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ArticleFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_145856_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_145856_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ArticleSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ArticleSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +169,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1j8inQGpbLCWKH9VSAx2NyRTs72" />
@@ -190,14 +194,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\moaAPI\storage\app\public\article" />
+      <recent name="C:\xampp\htdocs\moaAPI\storage\app\public" />
+      <recent name="C:\xampp\htdocs\moaAPI\app\Http\Controllers\User" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\moaAPI\resources\lang\en" />
       <recent name="C:\xampp\htdocs\moaAPI\resources\lang\ar" />
       <recent name="C:\xampp\htdocs\blog\app" />
       <recent name="C:\xampp\htdocs\blog\database\seeders" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\moaAPI\app\Http\Controllers\User" />
     </key>
   </component>
   <component name="RunManager">
@@ -240,7 +246,8 @@
       <workItem from="1603665976414" duration="243000" />
       <workItem from="1603666430149" duration="18000" />
       <workItem from="1603697510473" duration="14615000" />
-      <workItem from="1603721083453" duration="7561000" />
+      <workItem from="1603721083453" duration="7640000" />
+      <workItem from="1603732625000" duration="13605000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -396,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603725700212</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="article">
+      <created>1603729961834</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603729961834</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,7 +439,8 @@
     <MESSAGE value="ROle" />
     <MESSAGE value="ROle2" />
     <MESSAGE value="relation end" />
-    <option name="LAST_COMMIT_MESSAGE" value="relation end" />
+    <MESSAGE value="article" />
+    <option name="LAST_COMMIT_MESSAGE" value="article" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="399" key="#Composer" timestamp="1603192297817">
@@ -440,6 +455,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603486062614" />
+    <state x="728" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603742746404">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="728" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603742746404" />
     <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603729389494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -484,10 +503,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1603665463884" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603725719769">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603729965930">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603725719769" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603729965930" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

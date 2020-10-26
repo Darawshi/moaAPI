@@ -18,6 +18,8 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('image');
+            $table->string('img_resized');
+            $table->string('img_thumb');
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
         });

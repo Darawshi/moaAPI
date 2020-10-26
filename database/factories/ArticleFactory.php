@@ -27,6 +27,8 @@ class ArticleFactory extends Factory
                 'title' => $this->faker->shuffleString('البتثجحخدزسش'),
                 'description' => $this->faker->shuffleString('البتثجحخدزسش'),
                 'image' => $this->faker->imageUrl(),
+                'img_resized' => $this->faker->imageUrl(),
+                'img_thumb' => $this->faker->imageUrl(),
                 'user_id' =>User::inRandomOrder()->first()->id
             ];
 
