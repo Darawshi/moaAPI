@@ -22,12 +22,23 @@ class UserController extends Controller
         'last_name_en' => 'string|max:15',
         'email' => 'string|email|unique:users',
         'emp_id' => 'string|unique:users|max:6',
-
+        'role_id' => 'numeric',
     ];
 
     public function index(){
         try {
-            $user =User::paginate();
+            $user =User::with(['role'=>function($q){
+                return $q->select('name_'.$this->getCurrentLang().' as name','id');
+            }] )->select(
+                'first_name_'.$this->getCurrentLang().' as first_name',
+                'first_name_'.$this->getCurrentLang().' as last_name',
+                'email',
+                'emp_id',
+                'id',
+                'role_id')
+                ->paginate();
+
+
             if(!$user){
                 return $this->returnError('E013' ,__('messages.user_not_found'));
             }
@@ -40,7 +51,17 @@ class UserController extends Controller
 
     public function show($id){
         try {
-            $user =User::find($id);
+            $user =User::with(['role'=>function($q){
+                return $q->select('name_'.$this->getCurrentLang().' as name','id');
+            }] )->select(
+                'first_name_'.$this->getCurrentLang().' as first_name',
+                'first_name_'.$this->getCurrentLang().' as last_name',
+                'email',
+                'emp_id',
+                'id',
+                'role_id')
+                ->find($id);
+
             if(!$user){
                 return $this->returnError('E013' ,'User not found');
             }
@@ -61,7 +82,7 @@ class UserController extends Controller
                 'email' => 'required|string|email|unique:users',
                 'password' => 'required|string',
                 'emp_id' => 'required|string|unique:users|max:6',
-
+                'role_id' => 'required|numeric',
             ];
 
             $validator = Validator::make($request->all(),$rules);
@@ -72,7 +93,7 @@ class UserController extends Controller
             }
 
             User::create(
-                $request ->only('first_name_ar','last_name_ar','first_name_en','last_name_en','email','emp_id')
+                $request ->only('first_name_ar','last_name_ar','first_name_en','last_name_en','email','emp_id','role_id')
                 +['password' =>Hash::make('password')
 
             ]);
@@ -101,7 +122,7 @@ class UserController extends Controller
                 return $this->returnValidationError($code, $validator);
             }
 
-            $user->update($request ->only('first_name_ar','last_name_ar','first_name_en','last_name_en','email','emp_id'));
+            $user->update($request ->only('first_name_ar','last_name_ar','first_name_en','last_name_en','email','emp_id','role_id'));
 
             return $this->returnSuccessMessage(__('messages.user_updated'));
 
