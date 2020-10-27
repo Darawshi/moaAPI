@@ -22,6 +22,7 @@ return [
     'role_deleted' => 'Role Deleted',
     'role_Used' => "Role Already In Used And Can't Be Deleted",
     'articles_not_found' => 'There is no Article Found',
+    'article_not_found' => 'Article Not Found',
     'article_deleted' => 'Article Deleted',
     'article_created' => 'Article Created',
     'article_updated' => 'Article Updated',

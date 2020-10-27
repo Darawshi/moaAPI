@@ -23,6 +23,7 @@ return [
     'role_deleted' => 'تم حذف الصلاحية',
     'role_Used' => 'الصلاحية مستخدمة , لايمكن حذفها',
     'articles_not_found' => 'لايوجد مقالات',
+    'article_not_found' => 'لا توجد مقالة',
     'article_deleted' => 'تم حذف المقالة',
     'article_created' => 'تم انشاء المقالة',
     'article_updated' => 'تم تحديث المقالة',
