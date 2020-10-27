@@ -67,8 +67,8 @@ class ArticleController extends Controller
                 'title'=>$request->input('title'),
                 'description'=>$request->input('description'),
                 'image'=>env('APP_URL') .'/'. $url,
-                'img_resized'=>env('APP_URL') .'/'. env('ARTICLE_THUMB_IMG'),
-                'img_thumb'=>env('APP_URL') .'/'. env('ARTICLE_THUMB_RESIZED'),
+                'img_resized'=>env('APP_URL') .'/'. env('ARTICLE_THUMB_IMG').$name .'.' .$file->extension(),
+                'img_thumb'=>env('APP_URL') .'/'. env('ARTICLE_THUMB_RESIZED').$name .'.' .$file->extension(),
                 'user_id'=> Auth::user()->id,
         ]);
 
