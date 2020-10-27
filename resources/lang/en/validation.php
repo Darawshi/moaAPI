@@ -152,6 +152,9 @@ return [
         'last_name_ar'=>'Last Name',
         'name_ar' => 'Name',
         'name_en' => 'Name',
+        'image' => 'Image',
+        'title' => 'Title',
+        'description' => 'Description',
     ],
 
 ];

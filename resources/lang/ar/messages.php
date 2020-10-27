@@ -24,6 +24,7 @@ return [
     'role_Used' => 'الصلاحية مستخدمة , لايمكن حذفها',
     'articles_not_found' => 'لايوجد مقالات',
     'article_deleted' => 'تم حذف المقالة',
+    'article_created' => 'تم انشاء المقالة',
 
 
 ];

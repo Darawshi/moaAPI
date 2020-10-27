@@ -82,8 +82,9 @@ return [
         'string' => ':attribute لا يمكن ان يكون اكثر من :max حروف.',
         'array' => 'The :attribute may not have more than :max items.',
     ],
-    'mimes' => 'The :attribute must be a file of type: :values.',
-    'mimetypes' => 'The :attribute must be a file of type: :values.',
+    'mimes' => '.:values : :attribute يجب ان تكون من نوع',
+    'mimetypes' => '.:values : :attribute يجب ان تكون من نوع',
+
     'min' => [
         'numeric' => 'The :attribute must be at least :min.',
         'file' => 'The :attribute must be at least :min kilobytes.',
@@ -152,6 +153,10 @@ return [
         'last_name_ar'=>'الاسم الاخير',
         'name_ar' => 'الاسم',
         'name_en' => 'الاسم',
+        'image' => 'الصورة',
+        'title' => 'العنوان',
+        'description' => 'التفاصيل',
+
     ],
 
 ];
