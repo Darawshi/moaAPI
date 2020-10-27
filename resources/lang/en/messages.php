@@ -24,4 +24,5 @@ return [
     'articles_not_found' => 'There is no Article Found',
     'article_deleted' => 'Article Deleted',
     'article_created' => 'Article Created',
+    'article_updated' => 'Article Updated',
 ];

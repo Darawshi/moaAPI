@@ -83,7 +83,45 @@ class ArticleController extends Controller
 
     public function update(Request $request, $id)
     {
-        //
+        try {
+            $article =Article::find($id);
+            if(!$article){
+                return $this->returnError('E013' ,__('messages.article_not_found'));
+            }
+
+            $rules = [
+                'title' => 'required|string',
+                'description' => 'required|string',
+                'image' => 'mimetypes:image/bmp,image/x-icon,image/jpeg,image/png,image/webp',
+            ];
+
+            $validator = Validator::make($request->all(),$rules);
+
+            if ($validator->fails()) {
+                $code = $this->returnCodeAccordingToInput($validator);
+                return $this->returnValidationError($code, $validator);
+            }
+
+            $file=$request->file('image');
+            if ($file){
+                $Image_name= $this->imageUpload($file,'article',1000,600,400,400);
+
+                $article->update(
+                    $request ->only('title','description')
+                    +['img_resized' =>$Image_name,'img_thumb' =>$Image_name,'user_id' =>Auth::user()->id]
+                );
+            }
+
+            else{
+                $article->update($request ->only('title','description'));
+            }
+
+            return $this->returnSuccessMessage(__('messages.article_updated'));
+
+        }
+        catch (\Exception $ex){
+            return $this->returnError($ex->getCode(), $ex->getMessage());
+        }
     }
 
     public function destroy($id)
