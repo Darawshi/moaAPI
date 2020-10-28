@@ -29,6 +29,7 @@ return [
     'article_updated' => 'تم تحديث المقالة',
     'advs_not_found' => 'لاتوجد اعلانات',
     'adv_not_found' => 'لا يوجد اعلان',
+    'adv_deleted' => 'تم حذف الاعلان',
 
 
 ];

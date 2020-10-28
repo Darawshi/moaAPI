@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Adv;
 
 use App\Http\Controllers\Controller;
 use App\Models\Adv;
+use App\Models\AdvAttach;
 use App\Traits\GeneralTrait;
 use App\Traits\UploadTrait;
 use Illuminate\Http\Request;
@@ -63,6 +64,17 @@ class AdvController extends Controller
 
     public function destroy($id)
     {
-
+        try {
+            $adv= Adv::find($id);
+            if(!$adv){
+                return $this->returnError('E013' ,__('messages.adv_not_found'));
+            }
+            AdvAttach::whereAdvId($adv->id)->delete();
+            Adv::destroy($id);
+            return $this->returnSuccessMessage(__('messages.adv_deleted'));
+        }
+        catch (\Exception $ex){
+            return $this->returnError($ex->getCode(), $ex->getMessage());
+        }
     }
 }

@@ -13,6 +13,6 @@ class AdvAttachSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\AdvAttach::factory(20)->create();
+        \App\Models\AdvAttach::factory(90)->create();
     }
 }
