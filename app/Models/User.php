@@ -51,5 +51,17 @@ class User extends Authenticatable
         return $this->hasMany(Article::class,'user_id' ,'id');
     }
 
+    public function advs()
+    {
+        return $this->hasMany(Adv::class, 'user_id', 'id');
+    }
+
+
+        public function adv_attaches(){
+            return $this->hasMany(AdvAttach::class,'user_id' ,'id');
+        }
+
+
+
 
 }
