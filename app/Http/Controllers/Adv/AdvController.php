@@ -20,7 +20,9 @@ class AdvController extends Controller
     public function index()
     {
         try {
-            $adv =Adv::paginate();
+            $adv =Adv::with(['adv_Attaches'=>function($q){
+                return $q->select('attachment','adv_id');
+            }] )->paginate();
 
             if(!$adv){
                 return $this->returnError('E013' ,__('messages.advs_not_found'));
@@ -35,7 +37,9 @@ class AdvController extends Controller
     public function show($id)
     {
         try {
-            $adv =Adv::find($id);
+            $adv =Adv::with(['adv_Attaches'=>function($q){
+                return $q->select('attachment','adv_id');
+            }] )->find($id);
 
             if(!$adv){
                 return $this->returnError('E013' ,__('messages.adv_not_found'));
@@ -49,16 +53,16 @@ class AdvController extends Controller
 
     public function store(Request $request)
     {
-        //
+
     }
 
     public function update(Request $request, $id)
     {
-        //
+
     }
 
     public function destroy($id)
     {
-        //
+
     }
 }
