@@ -2,17 +2,18 @@
 
 namespace Database\Factories;
 
-use App\Models\Model;
+use App\Models\Adv;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ModelFactory extends Factory
+class AdvFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Model::class;
+    protected $model = Adv::class;
 
     /**
      * Define the model's default state.
@@ -22,7 +23,10 @@ class ModelFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'title' => $this->faker->shuffleString('البتثجحخدزسش'),
+            'description' => $this->faker->shuffleString('البتثجحخدزسش'),
+            'image' => $this->faker->imageUrl(),
+            'user_id' =>User::inRandomOrder()->first()->id
         ];
     }
 }

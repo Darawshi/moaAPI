@@ -11,17 +11,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="article image upload finish">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Adv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/AdvAttach.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/AdvAttachFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/AdvFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_002143_create_advs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_002911_create_adv_attachs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/AdvAttachSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/AdvSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_011037_create_advs_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_014807_create_adv_attaches_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/id()" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/on('users')" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/string('image')" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/string('title')" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text('description')" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/timestamps()" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unsignedBigInteger('user_id')" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_145856_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_145856_create_articles_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AdvAttachFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AdvAttachFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AdvFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AdvFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/AdvAttachSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/AdvAttachSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/AdvSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/AdvSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +256,7 @@
       <workItem from="1603809568606" duration="12506000" />
       <workItem from="1603832687617" duration="3419000" />
       <workItem from="1603844393918" duration="2734000" />
+      <workItem from="1603847168227" duration="2684000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -457,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603825632056</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="article image upload finish">
+      <created>1603847316820</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1603847316820</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,10 +518,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603742746404" />
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603823784873">
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603848386589">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603823784873" />
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603848386589" />
     <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1603726408027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -551,10 +562,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1603665463884" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603825762767">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603847322939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603825762767" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603847322939" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
