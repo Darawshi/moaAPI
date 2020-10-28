@@ -21,6 +21,8 @@ class CreateArticlesTable extends Migration
             $table->string('img_thumb');
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
