@@ -11,8 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="adv db">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvAttachController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Adv.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Adv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AdvFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AdvFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_28_011037_create_advs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_011037_create_advs_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +247,7 @@
       <workItem from="1603844393918" duration="2734000" />
       <workItem from="1603847168227" duration="2684000" />
       <workItem from="1603849898516" duration="1214000" />
-      <workItem from="1603874515963" duration="729000" />
+      <workItem from="1603874515963" duration="1469000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -472,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603851040047</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="adv db">
+      <created>1603875796649</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1603875796649</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

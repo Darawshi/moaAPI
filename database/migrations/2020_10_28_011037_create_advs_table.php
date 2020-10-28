@@ -17,7 +17,8 @@ class CreateAdvsTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->string('image');
+            $table->string('img_resized');
+            $table->string('img_thumb');
             $table->unsignedBigInteger('user_id');
             $table->timestamps();
 

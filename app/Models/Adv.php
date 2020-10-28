@@ -9,7 +9,7 @@ class Adv extends Model
 {
     use HasFactory;
     protected $fillable=[
-        'title','description','user_id','image'
+        'title','description','user_id','img_resized','img_thumb'
     ];
     protected $hidden = [
         'user_id',
