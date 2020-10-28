@@ -26,4 +26,6 @@ return [
     'article_deleted' => 'Article Deleted',
     'article_created' => 'Article Created',
     'article_updated' => 'Article Updated',
+    'advs_not_found' => 'No Adv Found',
+    'adv_not_found' => 'Adv Not Found',
 ];

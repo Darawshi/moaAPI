@@ -27,6 +27,8 @@ return [
     'article_deleted' => 'تم حذف المقالة',
     'article_created' => 'تم انشاء المقالة',
     'article_updated' => 'تم تحديث المقالة',
+    'advs_not_found' => 'لاتوجد اعلانات',
+    'adv_not_found' => 'لا يوجد اعلان',
 
 
 ];

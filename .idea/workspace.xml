@@ -11,9 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="adv db">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Adv.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Adv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/AdvFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AdvFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_28_011037_create_advs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_28_011037_create_advs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AdvAttach.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AdvAttach.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +254,7 @@
       <workItem from="1603844393918" duration="2734000" />
       <workItem from="1603847168227" duration="2684000" />
       <workItem from="1603849898516" duration="1214000" />
-      <workItem from="1603874515963" duration="1469000" />
+      <workItem from="1603874515963" duration="2642000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -480,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603875796649</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="adv db">
+      <created>1603877213076</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1603877213076</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,10 +545,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603742746404" />
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603848386589">
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603878037258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603848386589" />
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603878037258" />
     <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1603726408027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -575,10 +589,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="681" y="261" width="540" height="524" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1603665463884" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603851044530">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1603877218468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603851044530" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603877218468" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
