@@ -136,10 +136,11 @@ class UserController extends Controller
 
     public function destroy($id){
         try {
-           $user= User::destroy($id);
+           $user= User::find($id);
             if(!$user){
                 return $this->returnError('E013' ,__('messages.user_not_found'));
             }
+            User::destroy($id);
             return $this->returnSuccessMessage(__('messages.user_deleted'));
         }
         catch (\Exception $ex){

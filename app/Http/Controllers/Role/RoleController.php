@@ -99,10 +99,11 @@ class RoleController extends Controller
     public function destroy($id)
     {
         try {
-            $role= Role::destroy($id);
+            $role= Role::find($id);
             if(!$role){
                 return $this->returnError('E006' ,__('messages.role_not_found'));
             }
+            Role::destroy($id);
             return $this->returnSuccessMessage(__('messages.role_deleted'));
         }
         catch (\Exception $ex){
