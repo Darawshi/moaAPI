@@ -127,10 +127,11 @@ class ArticleController extends Controller
     public function destroy($id)
     {
         try {
-            $article= Article::destroy($id);
+            $article= Article::find($id);
             if(!$article){
                 return $this->returnError('E013' ,__('messages.articles_not_found'));
             }
+            Article::destroy($id);
             return $this->returnSuccessMessage(__('messages.article_deleted'));
         }
         catch (\Exception $ex){

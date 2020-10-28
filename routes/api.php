@@ -30,9 +30,10 @@ Route::group(['middleware' =>[ 'changeLang','checkPassword' ,'auth:api' ] ] ,fun
 
     Route::apiResource('role', RoleController::class);
     Route::apiResource('article',ArticleController::class);
+    Route::get('articles/me' , [ArticleController::class,'userArticle']);
 
     Route::apiResource('adv',AdvController::class);
-    Route::get('adv/me' , [AdvController::class,'userAdv']);
+    Route::get('advs/me' , [AdvController::class,'userAdv']);
 });
 
 

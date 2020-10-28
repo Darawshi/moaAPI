@@ -29,4 +29,6 @@ return [
     'advs_not_found' => 'No Adv Found',
     'adv_not_found' => 'Adv Not Found',
     'adv_deleted' => 'Adv Deleted',
+    'adv_created' => 'Adv Created',
+    'adv_updated' => 'Adv Updated',
 ];

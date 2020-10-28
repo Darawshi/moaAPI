@@ -13,6 +13,6 @@ class AdvSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Adv::factory(20)->create();
+        \App\Models\Adv::factory(200)->create();
     }
 }

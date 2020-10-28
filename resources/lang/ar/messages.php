@@ -30,6 +30,8 @@ return [
     'advs_not_found' => 'لاتوجد اعلانات',
     'adv_not_found' => 'لا يوجد اعلان',
     'adv_deleted' => 'تم حذف الاعلان',
+    'adv_created' => 'تم انشاء الاعلان',
+    'adv_updated' => 'تم تحديث الاعلان',
 
 
 ];

@@ -156,6 +156,7 @@ return [
         'image' => 'الصورة',
         'title' => 'العنوان',
         'description' => 'التفاصيل',
+        'attach' => 'المرفق',
 
     ],
 
