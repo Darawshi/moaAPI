@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Adv;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\AdvRequest;
 use App\Models\Adv;
 use App\Models\AdvAttach;
 use App\Traits\GeneralTrait;
 use App\Traits\UploadTrait;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
@@ -60,6 +60,7 @@ class AdvController extends Controller
                 'title' => 'required|string',
                 'description' => 'required|string',
                 'image' => 'required|mimetypes:image/bmp,image/x-icon,image/jpeg,image/png,image/webp',
+                'attachments.*' =>'mimes:pdf,zip,doc,docx,xls,xlsx,png'
             ];
 
             $validator = Validator::make($request->all(),$rules);
@@ -70,12 +71,20 @@ class AdvController extends Controller
             }
 
             $file=$request->file('image');
-            $Image_name= $this->imageUpload($file,'article',1000,600,400,400);
+            $Image_name= $this->imageUpload($file,'adv',1000,600,400,400);
 
-            Adv::create(
+            $adv = Adv::create(
                 $request ->only('title','description')
                 +['img_resized' =>$Image_name,'img_thumb' =>$Image_name,'user_id' =>Auth::user()->id]
             );
+
+            if ($request->hasFile('attachments')){
+
+                foreach ($request->attachments as $attach) {
+
+                    $this->advAttachUpload($attach,$adv->id);
+                }
+            }
 
             return $this->returnSuccessMessage(__('messages.adv_created'));
 
@@ -91,13 +100,14 @@ class AdvController extends Controller
         try {
             $adv =Adv::find($id);
             if(!$adv){
-                return $this->returnError('E013' ,__('messages.article_not_found'));
+                return $this->returnError('E013' ,__('messages.adv_not_found'));
             }
 
             $rules = [
-                'title' => 'required|string',
-                'description' => 'required|string',
+                'title' => 'string',
+                'description' => 'string',
                 'image' => 'mimetypes:image/bmp,image/x-icon,image/jpeg,image/png,image/webp',
+                'attachments.*' =>'mimes:pdf,zip,doc,docx,xls,xlsx,png'
             ];
 
             $validator = Validator::make($request->all(),$rules);
@@ -107,18 +117,31 @@ class AdvController extends Controller
                 return $this->returnValidationError($code, $validator);
             }
 
-            $file=$request->file('image');
-            if ($file){
-                $Image_name= $this->imageUpload($file,'article',1000,600,400,400);
-
+            $image=$request->file('image');
+            $file=$request->file('attachments');
+            if ($image){
+                $Image_name= $this->imageUpload($image,'adv',1000,600,400,400);
                 $adv->update(
                     $request ->only('title','description')
                     +['img_resized' =>$Image_name,'img_thumb' =>$Image_name,'user_id' =>Auth::user()->id]
                 );
+
+                if ($file){
+                    foreach ($request->attachments as $attach) {
+
+                        $this->advAttachUpload($attach,$adv->id);
+                    }
+                }
             }
 
             else{
                 $adv->update($request ->only('title','description'));
+                if ($file){
+                    foreach ($request->attachments as $attach) {
+
+                        $this->advAttachUpload($attach,$adv->id);
+                    }
+                }
             }
 
             return $this->returnSuccessMessage(__('messages.adv_updated'));

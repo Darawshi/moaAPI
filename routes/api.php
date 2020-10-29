@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Adv\AdvAttachController;
 use App\Http\Controllers\Adv\AdvController;
 use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Role\RoleController;
@@ -34,6 +35,8 @@ Route::group(['middleware' =>[ 'changeLang','checkPassword' ,'auth:api' ] ] ,fun
 
     Route::apiResource('adv',AdvController::class);
     Route::get('advs/me' , [AdvController::class,'userAdv']);
+
+    Route::apiResource('attachment',AdvAttachController::class)->only('store','destroy');
 });
 
 

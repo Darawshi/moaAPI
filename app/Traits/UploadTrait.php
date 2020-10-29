@@ -2,7 +2,9 @@
 
 namespace App\Traits;
 
+use App\Models\AdvAttach;
 use DateTime;
+use Illuminate\Support\Facades\Auth;
 use Intervention\Image\ImageManagerStatic;
 
 trait UploadTrait
@@ -20,5 +22,15 @@ trait UploadTrait
         return $imageName;
     }
 
+    public function advAttachUpload($attach,$id){
 
+            $fileName = (new DateTime('now'))->format('Y-m-d-His').'-'.$attach->getClientOriginalName();
+            $attach->move(storage_path('app/public/adv/Files'), $fileName);
+            AdvAttach::create([
+                'adv_id' => $id,
+                'attachment' => $fileName,
+                'user_id' =>Auth::user()->id
+            ]);
+
+    }
 }

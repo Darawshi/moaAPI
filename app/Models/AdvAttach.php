@@ -36,7 +36,7 @@ class AdvAttach extends Model
         'attachment','adv_id','user_id'
     ];
     protected $hidden = [
-        'user_id','adv_id','created_at','updated_at'
+        'user_id','created_at','updated_at'
     ];
 
     public function user(){
