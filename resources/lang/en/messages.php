@@ -31,4 +31,7 @@ return [
     'adv_deleted' => 'Adv Deleted',
     'adv_created' => 'Adv Created',
     'adv_updated' => 'Adv Updated',
+    'attach_not_found' => 'Attachment Not Founded',
+    'attach_deleted' => 'Attachment Deleted',
+    'attach_created' => 'Attachment Created',
 ];

@@ -32,6 +32,9 @@ return [
     'adv_deleted' => 'تم حذف الاعلان',
     'adv_created' => 'تم انشاء الاعلان',
     'adv_updated' => 'تم تحديث الاعلان',
+    'attach_not_found' => 'المرفق غير موجود',
+    'attach_deleted' => 'تم حذف المرفق',
+    'attach_created' => 'تم انشاء المرفق',
 
 
 ];
