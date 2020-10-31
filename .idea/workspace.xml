@@ -10,11 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="adv f">
+    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="attach &#10;F">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvAttachController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvAttachController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +259,9 @@
       <workItem from="1603983846433" duration="1219000" />
       <workItem from="1603993510957" duration="10482000" />
       <workItem from="1604005431782" duration="165000" />
-      <workItem from="1604010412127" duration="1813000" />
+      <workItem from="1604010412127" duration="2249000" />
+      <workItem from="1604159307603" duration="2200000" />
+      <workItem from="1604178689137" duration="1612000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -585,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604005584610</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="attach &#10;F">
+      <created>1604012255052</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1604012255052</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -619,7 +626,8 @@
     <MESSAGE value="adv db" />
     <MESSAGE value="adv delete F" />
     <MESSAGE value="adv f" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="attach &#10;F" />
+    <option name="LAST_COMMIT_MESSAGE" value="attach &#10;F" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="399" key="#Composer" timestamp="1603192297817">
@@ -630,10 +638,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="344" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1603658450213" />
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603486062614">
+    <state x="552" y="178" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604012547060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603486062614" />
+    <state x="552" y="178" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604012547060" />
     <state x="728" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603742746404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -690,10 +698,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603919476760" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604005588793">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604012259516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604005588793" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604012259516" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

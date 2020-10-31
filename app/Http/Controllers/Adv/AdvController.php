@@ -160,7 +160,7 @@ class AdvController extends Controller
             if(!$adv){
                 return $this->returnError('E013' ,__('messages.adv_not_found'));
             }
-            AdvAttach::whereAdvId($adv->id)->delete();
+            AdvAttach::whereAdvId($id)->delete();
             Adv::destroy($id);
             return $this->returnSuccessMessage(__('messages.adv_deleted'));
         }
