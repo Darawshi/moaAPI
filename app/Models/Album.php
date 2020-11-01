@@ -28,7 +28,7 @@ class Album extends Model
         return $this->belongsTo(User::class , 'user_id' ,'id');
     }
 
-    public function adv_AlbumPhotos(){
+    public function AlbumPhotos(){
         return $this->hasMany(AlbumPhoto::class,'album_id' ,'id');
     }
 

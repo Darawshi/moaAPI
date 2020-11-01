@@ -34,4 +34,5 @@ return [
     'attach_not_found' => 'Attachment Not Founded',
     'attach_deleted' => 'Attachment Deleted',
     'attach_created' => 'Attachment Created',
+    'album_not_found' => 'No Album Founded',
 ];
