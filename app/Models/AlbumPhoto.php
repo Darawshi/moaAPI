@@ -20,7 +20,7 @@ class AlbumPhoto extends Model
     protected $table = 'album_photos';
 
     protected $fillable=[
-        'name','album_id',
+        'img_resized', 'img_thumb','album_id',
     ];
 
 

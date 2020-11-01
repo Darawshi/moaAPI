@@ -23,7 +23,8 @@ class AlbumPhotoFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->firstName(),
+            'img_resized' => $this->faker->imageUrl(),
+            'img_thumb' => $this->faker->imageUrl(),
             'album_id' =>Album::inRandomOrder()->first()->id,
 
         ];

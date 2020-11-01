@@ -36,6 +36,7 @@ return [
     'attach_deleted' => 'تم حذف المرفق',
     'attach_created' => 'تم انشاء المرفق',
     'album_not_found' => 'لا يوجد البومات للصور',
+    'album_created' => 'تم اشاء الالبوم',
 
 
 ];

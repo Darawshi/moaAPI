@@ -156,6 +156,7 @@ return [
         'title' => 'Title',
         'description' => 'Description',
         'attach' => 'Attachment',
+        'name' => 'Name',
     ],
 
 ];
