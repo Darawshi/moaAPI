@@ -11,8 +11,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="attach &#10;F">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Album/AlbumController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Album/AlbumPhotoController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Album.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/AlbumPhoto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/AlbumFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/AlbumPhotoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_130004_create_albums_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_01_130750_create_album_photos_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/AlbumPhotoSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/AlbumSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +271,8 @@
       <workItem from="1604005431782" duration="165000" />
       <workItem from="1604010412127" duration="2249000" />
       <workItem from="1604159307603" duration="2200000" />
-      <workItem from="1604178689137" duration="1612000" />
+      <workItem from="1604178689137" duration="1663000" />
+      <workItem from="1604232825670" duration="3030000" />
     </task>
     <task id="LOCAL-00001" summary="trait">
       <created>1603268182692</created>
@@ -592,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604012255052</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="attach &#10;F">
+      <created>1604180343963</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1604180343963</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -646,10 +664,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603742746404" />
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604011836019">
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604237137283">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604011836019" />
+    <state x="1118" y="136" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604237137283" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603917775388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -698,10 +716,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603919476760" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604012259516">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604180349755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604012259516" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604180349755" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

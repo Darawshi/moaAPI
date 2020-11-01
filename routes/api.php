@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\Adv\AdvAttachController;
 use App\Http\Controllers\Adv\AdvController;
+use App\Http\Controllers\Album\AlbumController;
+use App\Http\Controllers\Album\AlbumPhotoController;
 use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\Role\RoleController;
 use App\Http\Controllers\User\UserAuthController;
@@ -37,6 +39,9 @@ Route::group(['middleware' =>[ 'changeLang','checkPassword' ,'auth:api' ] ] ,fun
     Route::get('advs/me' , [AdvController::class,'userAdv']);
 
     Route::apiResource('attachment',AdvAttachController::class)->only('store','destroy');
+
+    Route::apiResource('album', AlbumController::class);
+    Route::apiResource('albumPhotos', AlbumPhotoController::class)->only('store','destroy');
 });
 
 
