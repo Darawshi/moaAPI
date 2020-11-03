@@ -131,6 +131,9 @@ class ArticleController extends Controller
             if(!$article){
                 return $this->returnError('E013' ,__('messages.articles_not_found'));
             }
+            $imageName =$article->img_resized;
+            Storage::delete('public/article/image/resized/'.$imageName);
+            Storage::delete('public/article/image/thumb/'.$imageName);
             Article::destroy($id);
             return $this->returnSuccessMessage(__('messages.article_deleted'));
         }

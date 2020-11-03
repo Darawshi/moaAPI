@@ -35,8 +35,10 @@ return [
     'attach_not_found' => 'المرفق غير موجود',
     'attach_deleted' => 'تم حذف المرفق',
     'attach_created' => 'تم انشاء المرفق',
-    'album_not_found' => 'لا يوجد البومات للصور',
-    'album_created' => 'تم اشاء الالبوم',
+    'album_not_found' => 'ألبوم الصور غير موجود',
+    'album_created' => 'تم انشاء الالبوم',
+    'album_updated' => 'تم تعديل الالبوم',
+    'album_deleted' => 'تم حذف الالبوم',
 
 
 ];

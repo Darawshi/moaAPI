@@ -36,4 +36,6 @@ return [
     'attach_created' => 'Attachment Created',
     'album_not_found' => 'No Album Founded',
     'album_created' => 'Album Created',
+    'album_updated' => 'Album Updated',
+    'album_deleted' => 'Album Deleted',
 ];
