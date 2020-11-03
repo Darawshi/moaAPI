@@ -20,7 +20,7 @@ class AdvAttachController extends Controller
     {
         try {
             $rules = [
-                'attachment' => 'required|mimes:pdf,zip,doc,docx,xls,xlsx,png',
+                'attachments.*' => 'required|mimes:pdf,zip,doc,docx,xls,xlsx,png,jpg',
                 'adv_id' => 'required|numeric',
             ];
 
@@ -31,9 +31,12 @@ class AdvAttachController extends Controller
                 return $this->returnValidationError($code, $validator);
             }
 
-            $attach =$request->attachment;
             $advID = $request->adv_id;
-            $this->advAttachUpload($attach,$advID);
+            foreach ($request->attachments as $attach) {
+
+                $this->advAttachUpload($attach,$advID);
+            }
+
             return $this->returnSuccessMessage(__('messages.attach_created'));
         }
 
