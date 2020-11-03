@@ -159,8 +159,22 @@ class AdvController extends Controller
             if(!$adv){
                 return $this->returnError('E013' ,__('messages.adv_not_found'));
             }
+            $attachments =AdvAttach::whereAdvId($id)->get();
+            foreach ($attachments as $attachment){
+               $attachFile =$attachment->attachment;
+                Storage::delete('public/adv/Files/'.$attachFile);
+            }
             AdvAttach::whereAdvId($id)->delete();
+            //get adv img name
+            $imgResized =$adv->img_resized;
+            $imgThumb =$adv->img_resized;
+
+            //delete adv img from storage
+            Storage::delete('public/adv/image/resized/'.$imgResized);
+            Storage::delete('public/adv/image/thumb/'.$imgThumb);
+            //delete adv
             Adv::destroy($id);
+
             return $this->returnSuccessMessage(__('messages.adv_deleted'));
         }
         catch (\Exception $ex){

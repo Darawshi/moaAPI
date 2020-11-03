@@ -10,12 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="ALbum">
+    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="ALbum delete">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Album/AlbumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Album/AlbumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Article/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvAttachController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvAttachController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Adv/AdvController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,14 +267,8 @@
       <workItem from="1604232825670" duration="3076000" />
       <workItem from="1604259898031" duration="4239000" />
       <workItem from="1604356815128" duration="6426000" />
-      <workItem from="1604365879473" duration="2273000" />
-    </task>
-    <task id="LOCAL-00003" summary="trait">
-      <created>1603268585494</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1603268585494</updated>
+      <workItem from="1604365879473" duration="2493000" />
+      <workItem from="1604423573952" duration="3467000" />
     </task>
     <task id="LOCAL-00004" summary="trait">
       <created>1603269734794</created>
@@ -614,7 +606,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604264124556</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="ALbum delete">
+      <created>1604368352783</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1604368352783</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,7 +649,8 @@
     <MESSAGE value="adv f" />
     <MESSAGE value="attach &#10;F" />
     <MESSAGE value="ALbum" />
-    <option name="LAST_COMMIT_MESSAGE" value="ALbum" />
+    <MESSAGE value="ALbum delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="ALbum delete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="399" key="#Composer" timestamp="1603192297817">
@@ -721,10 +721,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603919476760" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604264128968">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604368359276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604264128968" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604368359276" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -5,20 +5,22 @@ namespace App\Http\Controllers\Adv;
 use App\Http\Controllers\Controller;
 use App\Models\AdvAttach;
 use App\Traits\GeneralTrait;
+use App\Traits\UploadTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 
 class AdvAttachController extends Controller
 {
     use GeneralTrait;
-
+    use UploadTrait;
 
     public function store(Request $request)
     {
         try {
             $rules = [
-                'attachment' => 'required|string',
+                'attachment' => 'required|mimes:pdf,zip,doc,docx,xls,xlsx,png',
                 'adv_id' => 'required|numeric',
             ];
 
@@ -29,7 +31,9 @@ class AdvAttachController extends Controller
                 return $this->returnValidationError($code, $validator);
             }
 
-            AdvAttach::create($request ->only('attachment','adv_id') +['user_id' =>Auth::user()->id]);
+            $attach =$request->attachment;
+            $advID = $request->adv_id;
+            $this->advAttachUpload($attach,$advID);
             return $this->returnSuccessMessage(__('messages.attach_created'));
         }
 
@@ -46,6 +50,8 @@ class AdvAttachController extends Controller
             if(!$advAttach){
                 return $this->returnError('E013' ,__('messages.attach_not_found'));
             }
+            $attachFile =$advAttach->attachment;
+            Storage::delete('public/adv/Files/'.$attachFile);
             AdvAttach::destroy($id);
             return $this->returnSuccessMessage(__('messages.attach_deleted'));
         }
