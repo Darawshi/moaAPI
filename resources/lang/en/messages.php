@@ -38,4 +38,7 @@ return [
     'album_created' => 'Album Created',
     'album_updated' => 'Album Updated',
     'album_deleted' => 'Album Deleted',
+    'photo_created' => 'Photo Created',
+    'photo_not_found' => 'Photo Not Found',
+    'photo_deleted' => 'Photo Deleted',
 ];

@@ -41,7 +41,7 @@ Route::group(['middleware' =>[ 'changeLang','checkPassword' ,'auth:api' ] ] ,fun
     Route::apiResource('attachment',AdvAttachController::class)->only('store','destroy');
 
     Route::apiResource('album', AlbumController::class);
-    Route::apiResource('albumPhotos', AlbumPhotoController::class)->only('store','destroy');
+    Route::apiResource('albumPhoto', AlbumPhotoController::class)->only('store','destroy');
 });
 
 

@@ -137,6 +137,7 @@ class AlbumController extends Controller
             //delete photo from db
             $photoID=$photo->id;
             AlbumPhoto::destroy($photoID);
+                return $this->returnSuccessMessage(__('messages.album_deleted'));
             }
 
             //delete album

@@ -39,6 +39,9 @@ return [
     'album_created' => 'تم انشاء الالبوم',
     'album_updated' => 'تم تعديل الالبوم',
     'album_deleted' => 'تم حذف الالبوم',
+    'photo_created' => 'تم اضافة الصورة',
+    'photo_not_found' => 'الصورة غير موجودة',
+    'photo_deleted' => 'تم حذف الصورة',
 
 
 ];
