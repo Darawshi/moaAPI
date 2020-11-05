@@ -5,15 +5,18 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Traits\GeneralTrait;
+use App\Traits\UploadTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends Controller
 {
     use GeneralTrait;
+    use UploadTrait;
 
     private $UpdateRules = [
         'first_name_ar' => 'string|max:15',
@@ -23,6 +26,7 @@ class UserController extends Controller
         'email' => 'string|email|unique:users',
         'emp_id' => 'string|unique:users|max:6',
         'role_id' => 'numeric',
+        'photo'=>'mimetypes:image/bmp,image/x-icon,image/jpeg,image/png,image/webp'
     ];
 
     public function index(){
@@ -35,7 +39,9 @@ class UserController extends Controller
                 'email',
                 'emp_id',
                 'id',
-                'role_id')
+                'role_id',
+                'img_thumb',
+                'img_resized')
                 ->paginate();
 
 
@@ -59,7 +65,9 @@ class UserController extends Controller
                 'email',
                 'emp_id',
                 'id',
-                'role_id')
+                'role_id',
+                'img_thumb',
+                'img_resized')
                 ->find($id);
 
             if(!$user){
@@ -140,6 +148,10 @@ class UserController extends Controller
             if(!$user){
                 return $this->returnError('E013' ,__('messages.user_not_found'));
             }
+            $imageResized =$user->img_resized;
+            $imageThumb =$user->img_thumb;
+            Storage::delete('public/user/image/resized/'.$imageResized);
+            Storage::delete('public/user/image/thumb/'.$imageThumb);
             User::destroy($id);
             return $this->returnSuccessMessage(__('messages.user_deleted'));
         }
@@ -176,7 +188,19 @@ class UserController extends Controller
                 return $this->returnValidationError($code, $validator);
             }
 
-            $user->update($request ->only('first_name_ar','last_name_ar','first_name_en','last_name_en','email','emp_id'));
+            if ($request->hasFile('photo')){
+                $file=$request->file('photo');
+                $Image_name= $this->imageUpload($file,'user',1000,600,400,400);
+
+                $user->update(
+                    $request ->only('first_name_ar','last_name_ar','first_name_en','last_name_en','email','emp_id')
+                    +['img_resized' =>$Image_name,'img_thumb' =>$Image_name]
+                );
+            }
+            else{
+                $user->update($request ->only('first_name_ar','last_name_ar','first_name_en','last_name_en','email','emp_id'));
+            }
+
 
             return $this->returnSuccessMessage(__('messages.user_updated'));
 
