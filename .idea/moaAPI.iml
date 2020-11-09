@@ -144,5 +144,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="testpassport" />
     <orderEntry type="module" module-name="blog" />
+    <orderEntry type="module" module-name="moa" />
   </component>
 </module>
