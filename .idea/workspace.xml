@@ -20,17 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/../moa/moa/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../moa/moa/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../moa/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../moa/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../moa/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../moa/src/components/HelloWorld.vue" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,14 +286,7 @@
       <workItem from="1604886110064" duration="886000" />
       <workItem from="1604887010273" duration="762000" />
       <workItem from="1604887865797" duration="292000" />
-      <workItem from="1604888168310" duration="778000" />
-    </task>
-    <task id="LOCAL-00012" summary="login">
-      <created>1603575972742</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1603575972742</updated>
+      <workItem from="1604888168310" duration="894000" />
     </task>
     <task id="LOCAL-00013" summary="login">
       <created>1603583050741</created>
@@ -639,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604888283205</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="1">
+      <created>1604889194107</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1604889194107</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,10 +749,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603919476760" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604888300089">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604889199277">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604888300089" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604889199277" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
