@@ -10,16 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="photo F">
-      <change beforePath="$PROJECT_DIR$/../moa/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../moa/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moa/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../moa/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moa/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../moa/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/moaAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/moaAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="photo F" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../moa" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -279,14 +271,7 @@
       <workItem from="1604423573952" duration="4167000" />
       <workItem from="1604542399593" duration="4260000" />
       <workItem from="1604886110064" duration="886000" />
-      <workItem from="1604887010273" duration="63000" />
-    </task>
-    <task id="LOCAL-00008" summary="users">
-      <created>1603560091946</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1603560091946</updated>
+      <workItem from="1604887010273" duration="442000" />
     </task>
     <task id="LOCAL-00009" summary="users">
       <created>1603560455042</created>
@@ -624,7 +609,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604544731874</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="photo F">
+      <created>1604887277381</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1604887277381</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
