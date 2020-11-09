@@ -10,15 +10,27 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="photo F">
-      <change beforePath="$PROJECT_DIR$/.idea/moaAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/moaAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="05cd0245-76e1-469f-89a9-b4c436151aa9" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/../moa/moa/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../moa/moa/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +45,7 @@
     <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../moa" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -282,13 +294,7 @@
       <workItem from="1604886110064" duration="886000" />
       <workItem from="1604887010273" duration="762000" />
       <workItem from="1604887865797" duration="292000" />
-    </task>
-    <task id="LOCAL-00011" summary="login">
-      <created>1603575958010</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1603575958010</updated>
+      <workItem from="1604888168310" duration="778000" />
     </task>
     <task id="LOCAL-00012" summary="login">
       <created>1603575972742</created>
@@ -626,7 +632,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604887638749</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="1">
+      <created>1604888283205</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1604888283205</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +677,8 @@
     <MESSAGE value="ALbum" />
     <MESSAGE value="ALbum delete" />
     <MESSAGE value="photo F" />
-    <option name="LAST_COMMIT_MESSAGE" value="photo F" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="399" key="#Composer" timestamp="1603192297817">
@@ -731,10 +745,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="742" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603560390096" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604887891581">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604888265411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604887891581" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604888265411" />
     <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1603665463884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -743,10 +757,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603919476760" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604887648296">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604888300089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604887648296" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604888300089" />
     <state x="858" y="407" width="316" height="244" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1603486220908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
